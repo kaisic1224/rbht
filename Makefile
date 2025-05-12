@@ -14,6 +14,13 @@ ${EXEC} : ${OBJECTS}
 
 ${OBJECTS} : ${MAKEFILE_NAME}
 
+main.o : block.o
+	${CXX} ${CXXFLAGS} $^ -o $@
+
+
+block.o : block.cpp
+	${CXX} ${CXXFLAGS} -c $^
+
 -include ${DEPENDS}
 
 clean :
