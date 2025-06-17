@@ -1,0 +1,12 @@
+syntax = "proto2";
+
+package tetris;
+
+message ClientHello {
+  
+}
+
+
+message ClientGoodbye {
+
+}
